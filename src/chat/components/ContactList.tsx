@@ -1,8 +1,9 @@
 import { NavLink, useParams } from "react-router"
+import { useQuery } from "@tanstack/react-query"
 
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { useQuery } from "@tanstack/react-query"
+
 import { getClients } from "../fake/fake-data"
 
 
