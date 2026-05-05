@@ -47,8 +47,8 @@ export default function ChatLayout() {
             <h2 className="font-medium">Contact details</h2>
           </div>
           {/* <ContactInfo /> */}
-          {/* <NoContactSelected /> */}
-          <ContactInfoSkeleton />
+          <NoContactSelected />
+          {/* <ContactInfoSkeleton /> */}
         </div>
       </div>
     </div>
