@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router';
+import { NavLink, Outlet } from 'react-router';
 
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -27,30 +27,30 @@ export default function ChatLayout() {
                   </div>
                   G5 Customer
                 </Button>
-                <Button variant="ghost" className="w-full justify-start">
+                <NavLink to="/chat/1" className="w-full justify-start">
                   <div className="h-6 w-6 rounded-full bg-green-500 mr-2 flex-shrink-0 flex items-center justify-center text-white text-xs">
                     JD
                   </div>
                   John Doe
-                </Button>
-                <Button variant="ghost" className="w-full justify-start">
+                </NavLink>
+                <NavLink to="/chat/2" className="w-full justify-start">
                   <div className="h-6 w-6 rounded-full bg-purple-500 mr-2 flex-shrink-0 flex items-center justify-center text-white text-xs">
                     AS
                   </div>
                   Alice Smith
-                </Button>
-                <Button variant="ghost" className="w-full justify-start">
+                </NavLink>
+                <NavLink to="/chat/3" className="w-full justify-start">
                   <div className="h-6 w-6 rounded-full bg-yellow-500 mr-2 flex-shrink-0 flex items-center justify-center text-white text-xs">
                     RJ
                   </div>
                   Robert Johnson
-                </Button>
-                <Button variant="ghost" className="w-full justify-start">
+                </NavLink>
+                <NavLink to="/chat/4" className="w-full justify-start">
                   <div className="h-6 w-6 rounded-full bg-pink-500 mr-2 flex-shrink-0 flex items-center justify-center text-white text-xs">
                     EW
                   </div>
                   Emma Wilson
-                </Button>
+                </NavLink>
               </div>
             </div>
             <div className="pt-4 border-t mt-4">
