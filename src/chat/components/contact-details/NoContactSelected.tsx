@@ -1,4 +1,4 @@
-export const NoContactSelected = () => {
+const NoContactSelected = () => {
   return (
     <div className="flex flex-col items-center justify-center h-full bg-gradient-to-b from-slate-50 to-slate-100">
       <div className="text-center space-y-4">
@@ -13,3 +13,5 @@ export const NoContactSelected = () => {
     </div>
   );
 };
+
+export default NoContactSelected;
