@@ -17,7 +17,7 @@ export function LoginPage({
 
   const onGoogleLogin = () => {
     // Simula un inicio de sesión exitoso
-    navigate('/chat');
+    navigate('/chat' , { replace: true  });
   };
 
   return (
