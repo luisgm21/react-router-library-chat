@@ -16,8 +16,12 @@ import { RegisterPage } from "./auth/pages/RegisterPage"
 const ChatLayout = lazy(async () => {
     await sleep(1500) 
     return import("./chat/layout/ChatLayout")})
-import ChatPage from "./chat/pages/ChatPage"
-import { sleep } from "./lib/sleep"
+// import ChatPage from "./chat/pages/ChatPage"
+
+const ChatPage = lazy(async () => {
+    return import("./chat/pages/ChatPage")})
+
+    import { sleep } from "./lib/sleep"
 
 
 
