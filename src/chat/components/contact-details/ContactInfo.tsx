@@ -31,7 +31,7 @@ const ContactInfo = ({ client }: Props) => {
 							<span className="font-medium">{client.email}</span>
 						</div>
 						<div className="flex justify-between text-sm">
-							<span className="text-muted-foreground">Phone:</span>F
+							<span className="text-muted-foreground">Phone:</span>
 							<span className="font-medium">{client.phone}</span>
 						</div>
 						<div className="flex justify-between text-sm">
