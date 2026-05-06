@@ -1,12 +1,9 @@
 import { Link, Outlet } from 'react-router';
 
 import { Button } from '@/components/ui/button';
+import { X } from 'lucide-react';
 
-import { Contact2Icon, X } from 'lucide-react';
 import ContactList from '../components/ContactList';
-import ContactInfo from '../components/contact-details/ContactInfo';
-import NoContactSelected from '../components/contact-details/NoContactSelected';
-import ContactInfoSkeleton from '../components/contact-details/ContactInfoSkeleton';
 import ContactDetails from '../components/contact-details/ContactDetails';
 
 
