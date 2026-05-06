@@ -8,30 +8,30 @@ import ContactInfo from './ContactInfo';
 
 
 const ContactDetails = () => {
-  const { clientId } = useParams();
+	const { clientId } = useParams();
 
-    const { data: client , isLoading } = useQuery({
-        queryKey: ['client', clientId],
-        queryFn: () => getClient(clientId ?? '' ),
-        enabled: !!clientId, // Only run if clientId is available
-        staleTime: 1000 * 60 * 5 
-    })
+	const { data: client, isLoading } = useQuery({
+		queryKey: ['client', clientId],
+		queryFn: () => getClient(clientId ?? ''),
+		enabled: !!clientId, // Only run if clientId is available
+		staleTime: 1000 * 60 * 5
+	})
 
-    if (!clientId) {
-        return (<NoContactSelected />);
-    }
+	if (!clientId) {
+		return (<NoContactSelected />);
+	}
 
-    if (isLoading && !client) { 
-        return (<ContactInfoSkeleton />);
-    }
+	if (isLoading && !client) {
+		return (<ContactInfoSkeleton />);
+	}
 
-    if (client) {
-        return (<ContactInfo client={client} />);
-    }
+	if (client) {
+		return (<ContactInfo client={client} />);
+	}
 
-    return (
-    <div>ContactDetails</div>
-    );
+	return (
+		<div>Not Found</div>
+	);
 
 }
 
